@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculatrice</title>
+</head>
+<body>
+    <script>
+        const firstValue = prompt('Entrer un nombre');
+        const operator = prompt('Entrer un opérateur');
+        const secondValue = prompt('Entrer un deuxieme nombre');
+
+        if(operator=='+')
+        {
+            console.log(parseInt(firstValue)+parseInt(secondValue));
+        }
+
+        else if(operator=='-')
+        {
+            console.log(parseInt(firstValue)-parseInt(secondValue));
+        }
+
+        else if(operator=='*')
+        {
+            console.log(parseInt(firstValue)*parseInt(secondValue));
+        }
+
+        else if(operator=='/')
+        {
+            console.log(parseInt(firstValue)/parseInt(secondValue));
+        }
+        else
+        {
+            console.log('opération non valide');
+        }
+    </script>
+    
+</body>
+</html>
